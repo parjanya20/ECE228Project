@@ -4,7 +4,7 @@ import torch
 from torch import nn
 import matplotlib.image as mpimg
 
-
+data_dir = '/home/parjanya/UCSD_courses/ECE228/melanoma'
 X = df['image_name'].values
 X = [data_dir + '/train/' + x + '.jpg' for x in X]
 print(len(X))
